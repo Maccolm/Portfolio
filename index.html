@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<title>My Portfolio</title>
+</head>
+<body>
+<div class="wrapper">	
+	<header class="header">
+		<div class="header__container">
+			<a href="#" class="header__logo"><img src="img/icons/logo.svg" alt="logo"></a>
+			<div class="header__menu menu">
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item"><a data-goto=".services" href="#" class="menu__link">Services</a></li>
+						<li class="menu__item"><a data-goto=".portfolio" href="#" class="menu__link">Portfolios</a></li>
+						<li class="menu__item"><a data-goto=".career" href="#" class="menu__link">Experience</a></li>
+						<li class="menu__item"><a data-goto=".blog" href="#" class="menu__link">Blog</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__actions">
+				<a href="" class="header__button">Resume</a>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</div>
+	</header>
+	<main class="page">
+		<section class="page__main main-section">
+			<div class="main-section__container">
+				<div class="main-section__content">
+					<div class="main-section__title title">
+						<h1 class="title__label">MY NAME IS</h1>
+						<div class="title__value title_value_big">Vitalii <span>Shapovalov</span></div>
+					</div>
+					<div class="main-section__text text">
+					<p>Junior front-end developer with big enthusiasm and passion to work in a team, getting new experience, acquirement new cognition,  and growing to a middle and senior developer</p>
+					</div>
+					<div class="main-section__social social">
+						<a href="https://www.instagram.com/vitaliy_tixk" target="_blank" class="social__link _icon-instagram"><img src="img/icons/instagram.svg" alt=""><a>
+						<a href="https://github.com/Maccolm" target="_blank" class="social__link _icon-githab"><img src="img/icons/githab.svg" alt=""><a>
+						<a href="#" class="social__link _icon-twitter"><img src="img/icons/twitter.svg" alt=""></a>
+						<a href="https://www.linkedin.com/in/vitaliy-tixk-2b936a233" target="_blank" class="social__link _icon-linkendin"><img src="img/icons/linkendin.svg" alt=""><a>
+					</div>
+				</div>
+				<div class="main-section__decor decor-main-section">
+					<div class="decor-main-section__box">
+						<div class="main-section__image">
+							<img class="main-section__picture" src="img/main/main.png" alt="picture">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="services" class="page__services services main-section">
+			<div class="services__container">
+				<div class="services-section__title title">
+						<h2 class="title__label">SERVICES</h2>
+						<div class="title__value">Specialized in</div>
+				</div>
+				<div class="services__items">
+					<article class="services__item">
+						<div class="services__icon"><img src="img/icons/services.svg" alt="no"></div>
+						<h4 class="services__title">HTML/CSS/JS</h4>
+						<div class="services__text">Mandatory basic knowledge of site layout, and adherence to semantics in blocks of websites for correct naming of classes. Using cascade tables for styling and JavaScript for making interactive pages </div>
+					</article>
+					<article class="services__item">
+						<div class="services__icon"><img src="img/icons/services-2.svg" alt="no"></div>
+						<h4 class="services__title">SASS/SCSS</h4>
+						<div class="services__text">Using collections of programs to speed up work on the development and appearance of sites, ensuring their cross-browser compatibility. Using the Preprocessor Prepros, Webpack, Gulp</div>
+					</article>
+					<article class="services__item">
+						<div class="services__icon"><img src="img/icons/services-3.svg" alt="no"></div>
+						<h4 class="services__title">Web Development</h4>
+						<div class="services__text">Create and maintain your websites and also take care of its performance and traffic capacity.</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section id="portfolio" class="page__portfolio portfolio">
+			<div class="portfolio__container">
+				<div class="portfolio__header">
+					<div class="portfolio__title title">
+							<h3 class="title__label">MY WORKS</h3>
+							<div class="title__value">Featured Portfolios</div>
+					</div>
+					<div class="portfolio__controls">
+						<button type="button" class="portfolio__arrow portfolio__arrow_left"><span><img src="img/icons/arrow.svg" alt=""></span></button>
+						<button type="button" class="portfolio__arrow portfolio__arrow_right"><span><img src="img/icons/arrow.svg" alt=""></span></button>
+					</div>
+				</div>
+				<div class="portfolio__slider swiper-container">
+					<div class="portfolio__wrapper swiper-wrapper">
+						<div class="portfolio__slide swiper-slide">
+							<div class="item-portfolio">
+								<a href="https://maccolm.github.io/GoCorona/" target="_blank" class="item-portfolio__image"><img src="img/portfolio/Portfolio.png" alt="GoCorona"></a>
+								<div class="item-portfolio__body">
+									<h4 class="item-portfolio__title">GoCorona</h4>
+										<a href="#" class="item-portfolio__category category-link">WordPress</a>
+										<a href="https://maccolm.github.io/GoCorona/" target="_blank" class="item-portfolio__link"><img src="img/icons/link.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__slide swiper-slide">
+							<div class="item-portfolio">
+								<a href="https://maccolm.github.io/Adaptive-bicycle" target="_blank" class="item-portfolio__image"><img src="img/portfolio/Portfolio2.png" alt="Adaptive bicycle"></a>
+								<div class="item-portfolio__body">
+									<h4 class="item-portfolio__title">Adaptive bicycle</h4>
+										<a href="#" class="item-portfolio__category category-link">Flex</a>
+										<a href="https://maccolm.github.io/Adaptive-bicycle" target="_blank" class="item-portfolio__link"><img src="img/icons/link.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__slide swiper-slide">
+							<div class="item-portfolio">
+								<a href="https://maccolm.github.io/Real_Estate" target="_blank" class="item-portfolio__image"><img src="img/portfolio/Portfolio3.png" alt="Real Estate"></a>
+								<div class="item-portfolio__body">
+									<h4 class="item-portfolio__title">Real Estate</h4>
+										<a href="#"  class="item-portfolio__category category-link">HTML</a>
+										<a a href="https://maccolm.github.io/Real_Estate" target="_blank" class="item-portfolio__link"><img src="img/icons/link.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__slide swiper-slide">
+							<div class="item-portfolio">
+								<a href="" class="item-portfolio__image"><img src="img/portfolio/Portfolio3.png" alt="Agency Website."></a>
+								<div class="item-portfolio__body">
+									<h4 class="item-portfolio__title">Agency Website.</h4>
+										<a href="#" class="item-portfolio__category category-link">WordPress</a>
+										<a href="#" class="item-portfolio__link"><img src="img/icons/link.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-fp-section id="career" class="page__career career">
+			<div class="career__container">
+				<div class="career__body">
+					<div class="portfolio__title title">
+						<h5 class="title__label">career path</h5>
+						<div class="title__value">Work Experices</div>
+					</div>
+					<nav data-tabs-titles class="career__navigation navigation-career">
+						<button data-tab="#tab_1" type="button" class="navigation-career__title _tab-active">Java-Script Courses</button>
+						<button data-tab="#tab_2" type="button" class="navigation-career__title">Self-Education</button>
+						<button data-tab="#tab_3" type="button" class="navigation-career__title">Jakobssons Handelsträdgård</button>
+						<button data-tab="#tab_4" type="button" class="navigation-career__title">StoneTree</button>
+					</nav>
+					<div data-tabs-body class="career__content content-career">
+						<div id="tab_1" class="content-career__body _tab-active">
+							<div class="content-career__header">
+								<div class="content-career__title">Student <a href="https://stonetree-group.com/" class="content-career__link-title" target="_blank"></a></div>
+								<div class="content-career__location">Internet, Online</div>
+								<div class="content-career__time">February 2023 - Present days· Partical Time</div>
+								<div class="content-career__categories">
+									<a href="" class="category-link">Swift</a>
+									<a href="" class="category-link">Go</a>
+								</div>
+							</div>
+							<div class="content-career__main">
+								<ul class="content-career__list list-content-career">
+									<li class="list-content-career__item">Improving overall website performance for mobile users.</li>
+									<li class="list-content-career__item">Mastering functional programming</li>
+									<li class="list-content-career__item">Basics of Object Oriented Programming</li>
+								</ul>
+							</div>
+						</div>
+						<div id="tab_2" class="content-career__body">
+							<div class="content-career__header">
+								<div class="content-career__title">Front-end Developer <a href="#" class="content-career__link-title"></a></div>
+								<div class="content-career__location">Sweden</div>
+								<div class="content-career__time">Jul 2022 - Present · Partical-time</div>
+								<div class="content-career__categories">
+									<a href="" class="category-link">Swift</a>
+									<a href="" class="category-link">Go</a>
+								</div>
+							</div>
+							<div class="content-career__main">
+								<ul class="content-career__list list-content-career">
+									<li class="list-content-career__item">Learning Html Css Js using free sources on the internet, YouTube</li>
+									<li class="list-content-career__item">Mastering programs VSCode, Sublime Text 3, Prepros, Webpack, Gulp. Using preprocessor SASS.</li>
+									<li class="list-content-career__item">Learning how to make a website interactive and responsive.</li>
+									<li class="list-content-career__item">Practice on free PFD layouts, using Figma and the pixel perfect application to create own web pages</li>
+								</ul>
+							</div>
+						</div>
+						<div id="tab_3" class="content-career__body">
+							<div class="content-career__header">
+								<div class="content-career__title">General Worker <a href="https://www.instagram.com/jakobssonshandelstradgard/" class="content-career__link-title">Garden</a></div>
+								<div class="content-career__location">Ödåkra, Sweden</div>
+								<div class="content-career__time">Sep 2022 - Present · Full-time</div>
+								<div class="content-career__categories">
+									<a href="" class="category-link">Swift</a>
+									<a href="" class="category-link">Go</a>
+								</div>
+							</div>
+							<div class="content-career__main">
+								<ul class="content-career__list list-content-career">
+									<li class="list-content-career__item">Planting tulips, hyacinths, violets.</li>
+									<li class="list-content-career__item">Plant care, watering, fertilizing</li>
+									<li class="list-content-career__item">Making orders, preparing flowers before delivery</li>
+								</ul>
+							</div>
+						</div>
+						<div id="tab_4" class="content-career__body">
+							<div class="content-career__header">
+								<div class="content-career__title">Concierge Coordinator <a href="https://stonetree-group.com/" class="content-career__link-title" target="_blank">StoneTree .Inc</a></div>
+								<div class="content-career__location">Dubai, United Arab Emirates</div>
+								<div class="content-career__time">February 2022 - May 2022 · Full-time</div>
+								<div class="content-career__categories">
+									<a href="" class="category-link">Swift</a>
+									<a href="" class="category-link">Go</a>
+								</div>
+							</div>
+							<div class="content-career__main">
+								<ul class="content-career__list list-content-career">
+									<li class="list-content-career__item">Creating a schedule for concierges upon CRM information, adding tasks for them in real-timereal time.</li>
+									<li class="list-content-career__item">Manage with timing to make viewing for tenants, calling to concierges to inform them about additional viewing in their schedule.</li>
+									<li class="list-content-career__item">Carefully distribute tasks between concierges given them enough time to complete the task(check in/out, viewing, money collection)</li>
+									<li class="list-content-career__item">Registration tenants in DTCM: dubaitourism.gov.ae</li>
+									<li class="list-content-career__item">Be responsible for access cards, parking cards, and keys for all apartments. All movements and handovers with keys post in a special group on WhatsApp.</li>
+									<li class="list-content-career__item">Fill up KPI statistic of concierges.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-fp-section id="blog" class="page__blog blog">
+			<div class="blog__container">
+				<div class="blog__title title">
+						<h7 class="title__label">MY HOBBIES</h7>
+						<div class="title__value">Personal Blog</div>
+				</div>
+				<div class="blog__items">
+					<article class="blog__item item-blog">
+						<a href="https://www.youtube.com/channel/UCxfoPtqURh0wPPStGoYc7Bw" class="item-blog__img" target="_blank"><img src="img/blog/guitar.png" alt="Playing guitar"></a>
+						<div class="item-blog__body">
+							<h4 class="item-blog__title">
+								<a href="https://www.youtube.com/channel/UCxfoPtqURh0wPPStGoYc7Bw" target="_blank" class="item-blog__link-title">Playing guitar</a>
+							</h4>
+							<div class="item-blog__data data">Started 2013</div>
+							<div class="item-blog__text">Music is a big part of my life, as it is for all of us. I really like to listen to different music and songs, but at one<span id="dots">...</span> <span class="txt" id="more">point it occurred to me to record a song.  I was completely captivated by this thought and did not let go for a long time. By that time, I had saved enough money to buy a guitar. This is how my musical journey began. For now, I have my YouTube channel and have been playing the guitar for about 9 years.</span>
+							</div>
+							<button type="button" class="item-blog__btn" id="btn" onclick="readMore()">Continue Reading </button>
+						</div>
+					</article>
+					<article class="blog__item item-blog">
+						<a href="https://youtu.be/RAQJt50VJJs" target="_blank" class="item-blog__img"><img src="img/blog/editing.jpg" alt="Editing"></a>
+						<div class="item-blog__body">
+							<h4 class="item-blog__title">
+								<a href="https://youtu.be/RAQJt50VJJs" target="_blank" class="item-blog__link-title">Movie and music editing</a>
+							</h4>
+							<div class="item-blog__data data">Aug, 2016</div>
+							<div class="item-blog__text">When I started learning to play the guitar, I had the task to learn how to process my recordings. It was necessary<span id="dots2">...</span><span class="txt" id="more2"> to clean the soundtracks, apply sound effects. After soundtrack is ready, start to work with the video: cutting video tracks, making transitions, minimal color correction. I've tried different apps, but I've found my favorites that are a joy to use. I have basic video editing and creation skills.  I   would like to show <a href="https://youtu.be/RAQJt50VJJs" target="_blank" class="item-blog__link-title youtube-link">one of my favorite YouTube videos.</a></span></div>
+							<button type="button" class="item-blog__btn" id="btn2" onclick="readMoreSecond()">Continue Reading </button>
+						</div>
+					</article>
+					<article class="blog__item item-blog">
+						<a href="https://www.shutterstock.com/ru/g/Vitaliytikx" target="_blank" class="item-blog__img"><img src="img/blog/3.jpg" alt="How to prototype in figma"></a>
+						<div class="item-blog__body">
+							<h4 class="item-blog__title">
+								<a href="https://www.shutterstock.com/ru/g/Vitaliytikx" target="_blank" class="item-blog__link-title">Vector graphics in adobe illustrator</a>
+							</h4>
+							<div class="item-blog__data data">Sep, 2020 - Jul 2021</div>
+							<div class="item-blog__text">There was a time when I was interested in vector graphics. Greater interest appeared when I created own profile on<span id="dots3">...</span> <span class="txt" id="more3">shutterstock and started selling my works. It was a very interesting experience and adobe illustator gave me the basics of working with vector graphics that I can use in the future and work with vector graphics when needed.</span></div>
+							<button type="button" class="item-blog__btn" id="btn3" onclick="readMoreThird()">Continue Reading </button>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section data-fp-section class="page__testimonials testimonials">
+			<div class="testimonials__container">
+					<div class="testimonials__title title">
+						<h7 class="title__label">MY TEACHERS</h7>
+						<div class="title__value">Motivators</div>
+					</div>
+					<div class="testimonials__items">
+						<div class="testimonials__item item-testimonials">
+							<div class="item-testimonials__avatar"><img src="img/main/EvgenAndrikanich.png" alt="Evgen Andrikanich"></div>
+							<div class="item-testimonials__text">For 10 years, he successfully completed more than a thousand orders on Freelance from different parts of the world, earned a TOP rating in one of the largest freelance exchanges, began to make presentations and conduct training courses.</div>
+							<div class="item-testimonials__name">Evgen Andrikanich</div>
+							<div class="item-testimonials__profession data">Developer</div>
+						</div>
+						<div class="testimonials__item item-testimonials">
+							<div class="item-testimonials__avatar"><img src="img/main/AndrіyBrila.png" alt="AndrіyBrila"></div>
+							<div class="item-testimonials__text">Assistant (08.11.2003 - 01.09.2009), associate professor of the department (01.09.2009 - 17.02.2012), associate professor (17.02.2012 - until today). Internship at Texas A&M University -Texarkana (USA) (05/01/2016 - 06/08/2016). JavaScript Developer.</div>
+							<div class="item-testimonials__name">Andriy Brila</div>
+							<div class="item-testimonials__profession data">Developer</div>
+						</div>
+						<div class="testimonials__item item-testimonials">
+							<div class="item-testimonials__avatar"><img src="img/main/internet.png" alt="internet"></div>
+							<div class="item-testimonials__text">On the Internet we can find everything and use it as we like. I found 90 percent of the information to learn programming on the Internet.</div>
+							<div class="item-testimonials__name">World Wide Web</div>
+							<div class="item-testimonials__profession data">Internet</div>
+						</div>
+					</div>
+			</div>
+		</section>
+		<section data-fp-section class="page__skills skills">
+			<div class="skills__container">
+				<div class="skills__title title">
+						<h8 class="title__label">LEARNING PATH</h8>
+						<div class="title__value">Education & Skills</div>
+				</div>
+				<div class="skills__body">
+					<div class="skills__timeline timeline">
+						<div class="timeline__item">
+							<div class="timeline__title">Andriy Brila</div>
+							<div class="timeline__text">JavaScript courses</div>
+							<div class="timeline__date">feb 2023 - present time</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__title">Evgen Andrikanich</div>
+							<div class="timeline__text">Free website development course</div>
+							<div class="timeline__date">jul 2022 - feb 2023</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__title">YouTube</div>
+							<div class="timeline__text">Familiarity with programming</div>
+							<div class="timeline__date">june 2022 - july 2022</div>
+						</div>
+					</div>
+					<div class="skills__content content-skills">
+					<div class="content-skills__text text">
+						<p>
+						I have been continuously learning in the field of front-end  with new technologies and here you can see a summary of my skills.
+						</p>
+					</div>
+					<div class="content-skills__items">
+						<div class="content-skills__item">
+							<div class="content-skills__label">HTML/CSS/SASS</div>
+							<div class="content-skills__line">
+								<span style="width: 70%"></span>
+							</div>
+						</div>
+						<div class="content-skills__item">
+							<div class="content-skills__label">JavaScript</div>
+							<div class="content-skills__line">
+								<span style="width: 50%"></span>
+							</div>
+						</div>
+						<div class="content-skills__item">
+							<div class="content-skills__label">React</div>
+							<div class="content-skills__line">
+								<span style="width: 27.5%"></span>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-fp-section class="page__contacts contacts">
+			<div class="contacts__container">
+				<div class="contacts__content">
+					<form action="#" id="form" class="contacts__form form">
+						<div class="form__item">
+							<input type="text" name="form[]" id="formName" placeholder="Name" class="form__input _req">
+						</div>
+						<div class="form__item">
+							<input type="text" name="form[]" id="formEmail" placeholder="Email" class="form__input _req _email">
+						</div>
+						<div class="form__item">
+							<textarea type="text" name="form[]" id="formMessage" placeholder="Message" class="form__input"></textarea>
+						</div>
+						<div class="form__item">
+							<button type="submit"  class="form__button">Send Message</button>
+						</div>
+					</form>
+					<div class="contacts__body">
+						<ul class="contacts__list contacts-list">
+							<li class="contacts-list__item">
+								<a href="https://goo.gl/maps/h1RQ1sM2jAY8vRty5" target="_blank" class="contacts-list__icon"><img src="img/contacts/address.png" alt="address"></a>
+								<div class="contacts-list__body">
+									<div class="contacts-list__title">Address</div>
+									<a href="https://goo.gl/maps/h1RQ1sM2jAY8vRty5" target="_blank" class="contacts-list__text">Ödåkra 254 74, Sweden</a>
+								</div>
+							</li>
+							<li class="contacts-list__item">
+								<a href="tel:+46729680288" class="contacts-list__icon"><img src="img/contacts/phone.png" alt="phone"></a>
+								<div class="contacts-list__body">
+									<div class="contacts-list__title">Phone</div>
+									<a href="tel:+46729680288" class="contacts-list__text">+46 72-968 02 88</a>
+								</div>
+							</li>
+							<li class="contacts-list__item">
+								<a href="mailto:vitaliiprogitr@gmail.com" class="contacts-list__icon"><img src="img/contacts/email.png" alt="Email"></a>
+								<div class="contacts-list__body">
+									<div class="contacts-list__title">E-Mail</div>
+									<a href="mailto:vitaliiprogitr@gmail.com" class="contacts-list__text">vitaliiprogitr@gmail.com</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+				<div class="footer__social social">
+					<a href="https://www.instagram.com/vitaliy_tixk/" class="social__link _icon-instagram"><img src="img/icons/instagram.svg" alt=""><a>
+					<a href="https://github.com/Maccolm" class="social__link _icon-githab"><img src="img/icons/githab.svg" alt=""><a>
+					<a href="#" class="social__link _icon-twitter"><img src="img/icons/twitter.svg" alt=""></a>
+					<a href="https://www.linkedin.com/in/vitaliy-tixk-2b936a233/" class="social__link _icon-linkendin"><img src="img/icons/linkendin.svg" alt=""><a>
+				</div>
+			<div class="footer__text">© 2022  -  DevChapter</div>
+		</div>
+	</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/form.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
