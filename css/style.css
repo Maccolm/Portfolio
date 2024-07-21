@@ -907,7 +907,9 @@ body._lock .icon-menu span, body._lock .icon-menu::before, body._lock .icon-menu
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+  }
+  .career__navigation{
+	gap: 0;
   }
 }
 .career .navigation-career__title {
@@ -938,18 +940,42 @@ body._lock .icon-menu span, body._lock .icon-menu::before, body._lock .icon-menu
   color: #7E74F1;
   font-weight: 500;
 }
+.career .navigation-career__title._tab-active::after {
+	flex: 0 0 10px;
+	content: "";
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../img/icons/arrow.svg) right no-repeat;
+}
 @media (max-width: 768px) {
   .career .navigation-career__title._tab-active {
     border: 1px solid #656D72;
   }
-}
-.career .navigation-career__title._tab-active:after {
-  content: "";
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background: url(../img/icons/arrow.svg) right no-repeat;
+  .career .navigation-career__title{
+		width: 100%;
+		position: relative;
+  }
+  .career .navigation-career__title::after{
+		content: "";
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		height: 10px;
+		width: 10px;
+		background: url(../img/icons/arrow.svg) right no-repeat;
+		transform: rotate(90deg);
+		transition: all 0.3s ease-out;
+	}
+	.career .navigation-career__title._tab-active::after{
+		transition: all 0.3s ease-out;
+		top: 20px;
+		right: 30px;
+		height: 10px;
+		width: 10px;
+		transform: rotate(-90deg);
+	}
 }
 .career .navigation-career__title._tab-active:hover {
   opacity: 1;
@@ -968,6 +994,28 @@ body._lock .icon-menu span, body._lock .icon-menu::before, body._lock .icon-menu
   .career .content-career__header {
     padding-bottom: 20px;
   }
+  .career .content-career__body{
+	  padding: 5px 35px;
+	  max-height: 0;
+	  opacity: 0;
+	  display: block;
+	  pointer-events: none;
+	  transform-origin: bottom;
+	  overflow: hidden;
+	  visibility: hidden;
+	  transition: max-height 0.5s ease-out, opacity 0.1s, visibility 0.1s ease-out 0.5s, opacity 0.1s ease-out 0.5s;
+	}
+	.career .content-career__body._tab-active{
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+		transition: max-height 0.5s ease-out, opacity 0.1s, visibility 0.1s, opacity 0.1s;
+  }
+}
+@media (max-width: 480px){
+	.career .content-career__body{
+		padding: 5px 0 5px 25px;
+	}
 }
 .career .content-career__title {
   font-family: Plus Jakarta Sans;
@@ -1207,7 +1255,7 @@ body._lock .icon-menu span, body._lock .icon-menu::before, body._lock .icon-menu
 .youtube-link {
   text-decoration: underline;
 }
-.youtube-link::hover {
+.youtube-link:hover {
   text-decoration: none;
 }
 

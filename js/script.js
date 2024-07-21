@@ -66,20 +66,29 @@ tabsBtns.forEach(function (item) {
 		let tabId = currentBtn.getAttribute("data-tab");
 		let currentTab = document.querySelector(tabId);
 
-		if (! currentBtn.classList.contains("_tab-active")) {
+		if (!currentBtn.classList.contains("_tab-active")) {
 			tabsBtns.forEach(function (item) {
 				item.classList.remove("_tab-active");
 			});
 
 			tabsItems.forEach(function (e) {
 				e.classList.remove("_tab-active");
+				e.style.maxHeight = 0;
 			});
 		}
 
-
-
-		currentBtn.classList.add("_tab-active");
-		currentTab.classList.add("_tab-active");
+		if(window.innerWidth <= 768 && currentBtn.classList.contains('_tab-active')){
+			currentBtn.classList.remove('_tab-active');
+			currentTab.classList.remove('_tab-active');
+			currentTab.style.maxHeight = 0;
+		} else if (window.innerWidth > 768) {
+			currentBtn.classList.add("_tab-active");
+			currentTab.classList.add("_tab-active");
+		} else {
+			currentBtn.classList.add("_tab-active");
+			currentTab.classList.add("_tab-active");
+			currentTab.style.maxHeight = currentTab.scrollHeight + 'px';
+		}
 	});
 });
 
