@@ -33,7 +33,7 @@ new Swiper('.portfolio__slider', {
 			spaceBetween: 10,
 			autoHeight: true,
 		},
-		650: {
+		600: {
 			slidesPerView: 2,
 			spaceBetween: 20,
 		},

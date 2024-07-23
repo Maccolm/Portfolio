@@ -775,22 +775,30 @@ body._lock .icon-menu span, body._lock .icon-menu::before, body._lock .icon-menu
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 225px;
+  gap: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: flex-start;
+}
+@media  (max-width: 600px) {
+	.item-portfolio__body{
+		min-height: 170px;
+	}
 }
 .item-portfolio__text{
 	padding-top: 12px;
 	text-align: left;
 	line-height: 1.3;
+	margin-top: auto;
 }
 .item-portfolio__title {
   text-align: left;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
   margin: 0 0 16px 0;
   font-family: "Plus Jakarta Sans";
   font-weight: 500;
