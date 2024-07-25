@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'icons';
-  src:
-    url('icons.ttf') format('truetype'),
+  src:  url('icons.eot?csfbvs');
+  src:  url('icons.eot') format('embedded-opentype'),
     url('icon-x.ttf') format('truetype'),
-    url('icons.woff2') format('woff'),
-    url('fonts/icons.svg?6u4uja#icons') format('svg');
+    url('icon-x.woff') format('woff'),
+    url('icons.svg') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="_icon-"], [class*=" _icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
   speak: never;
@@ -25,23 +25,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-._icon-arrow:before {
-  content: "\e900";
-  color: #7e74f1;
-}
-._icon-githab:before {
-  content: "\e901";
+.icon-twitterX:before {
+  content: "\e905";
   color: black;
-}
-._icon-instagram:before {
-  content: "\e902";
-  color: black;
-}
-._icon-linkendin:before {
-  content: "\e903";
-	color: black;
-}
-._icon-twitter:before {
-	color: black;
-  content: "\e904";
 }

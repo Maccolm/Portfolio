@@ -488,6 +488,8 @@ body._lock .icon-menu span, body._lock .icon-menu::before, body._lock .icon-menu
 }
 .social__link {
   position: relative;
+  font-size: 23px;
+  cursor: pointer;
 }
 .social__link::after {
   content: "";
@@ -500,13 +502,16 @@ body._lock .icon-menu span, body._lock .icon-menu::before, body._lock .icon-menu
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   -webkit-box-shadow: 0px -2px 4px rgb(126, 116, 241);
-          box-shadow: 0px -2px 4px rgb(126, 116, 241);
+  box-shadow: 0px -2px 4px rgb(126, 116, 241);
 }
 .social__link:not(:last-child) {
-  margin-right: 32px;
+	margin-right: 32px;
 }
-.social__link:hover {
-  cursor: pointer;
+.social__link-icon::before{
+	transition: all 0.5s ease-out 0s;
+}
+.social__link:hover .social__link-icon::before{
+  color: #7E74F1;
 }
 .social__link:hover:after {
   width: 100%;
@@ -1356,6 +1361,7 @@ body._lock .icon-menu span, body._lock .icon-menu::before, body._lock .icon-menu
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 .item-testimonials__avatar {
   border: 2px solid #fff;
   border-radius: 50%;
@@ -1382,9 +1388,24 @@ body._lock .icon-menu span, body._lock .icon-menu::before, body._lock .icon-menu
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2857142857;
+  display: flex;
+  z-index: 12;
+  position: relative;
+  gap: 9px;
+  justify-content: center;
   margin-bottom: 9px;
+  color: #000;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -35px);
+  transition: all 0.3s ease-out;
+}
+._icon-linkendin:before{
+	transition: all 0.3s ease-out;
+}
+.item-testimonials__name:hover ._icon-linkendin:before, .item-testimonials__name:hover{
+	color: #645bca;
 }
 .item-testimonials__profession {
   margin-bottom: 24px;
