@@ -816,7 +816,7 @@ body._lock .icon-menu span, body._lock .icon-menu::before, body._lock .icon-menu
   cursor: pointer;
 }
 .item-portfolio__category {
-  margin: 0 16px 0 0;
+  margin: 0 7px 0 0;
 }
 .item-portfolio__link {
   position: relative;
